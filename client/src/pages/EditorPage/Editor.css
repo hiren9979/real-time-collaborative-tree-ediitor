@@ -1,0 +1,93 @@
+.mainWrap {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+}
+
+.aside {
+    background: #1c1e29;
+    padding: 16px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.clientsList {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.client {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 500;
+}
+
+.userName {
+    margin-top: 10px;
+}
+
+.logo {
+    border-bottom: 1px solid #424242;
+    padding-bottom: 10px;
+}
+
+.logoImage {
+    height: 70px;
+}
+
+.leaveBtn {
+    width: 100%;
+    margin-top: 20px;
+    font-weight: bol;
+}
+
+.copyBtn {
+    font-weight: bold;
+}
+
+.CodeMirror {
+    font-family: 'Cascadia Code', sans-serif !important;
+    min-height: calc(100vh - 20px);
+    font-size: 19px;
+    padding-top: 20px;
+    line-height: 1.2;
+}
+
+.TreeEditor {
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.TreeEditorButton {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+
+.TreeEditorInputField
+{
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    transition: border-color 0.25s;
+    margin-bottom: 1px;
+}
+
+circle {
+    stroke-width: 2.5;
+}

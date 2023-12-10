@@ -1,0 +1,110 @@
+
+.homePageWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 100vh;
+}
+
+.formWrapper {
+    background: #282a36;
+    padding: 20px;
+    border-radius: 10px;
+    width: 450px;
+    max-width: 90%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+footer a {
+    color: var(--join-color);
+    text-decoration: none;
+}
+
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainLabel {
+    margin-bottom: 20px;
+    margin-top: 0;
+    font-weight: 500;
+}
+
+.homePageLogo {
+    height: 80px;
+    margin-bottom: 30px;
+}
+
+.inputBox {
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    margin-bottom: 14px;
+    background: #eee;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.joinBtn {
+    background: var(--join-color);
+    font-weight: bold;
+    width: 100px;
+    margin-left: auto;
+}
+
+.leaveBtn {
+    background-color: var(--leave-color);
+    font-weight: bold;
+    width: 100px;
+    margin-left: auto;
+    color: white;
+}
+
+.joinBtn:hover {
+    background: var(--join-hover-color);
+    color: white;
+}
+
+.leaveBtn:hover {
+    background: var(--leave-hover-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.createInfo {
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.createNewBtn {
+    color: #40be70;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    font-weight: 500 !important;
+}
+
+.createNewBtn:hover {
+    color: #4aed88;
+    border-color: #4aed88;
+}
+
+footer a:hover {
+    color: var(--join-hover-color);
+}

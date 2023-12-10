@@ -1,0 +1,31 @@
+
+CREATE DATABASE `realtimecollaborativetreeeditor`;
+
+CREATE TABLE `document_nodes` (
+  `node_id` int NOT NULL AUTO_INCREMENT,
+  `parent_id` int DEFAULT NULL,
+  `content` varchar(255) NOT NULL,
+  PRIMARY KEY (`node_id`),
+  KEY `fk_parent` (`parent_id`),
+  CONSTRAINT `fk_parent` FOREIGN KEY (`parent_id`) REFERENCES `document_nodes` (`node_id`) ON DELETE CASCADE
+);
+
+CREATE TABLE `user_presence` (
+  `user_id` int NOT NULL,
+  `is_online` tinyint(1) DEFAULT NULL,
+  `last_activity` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `socket_id` varchar(200) NOT NULL,
+  PRIMARY KEY (`user_id`),
+  CONSTRAINT `fk_user` FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`) ON DELETE CASCADE
+);
+
+
+CREATE TABLE `users` (
+  `user_id` int NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `password_hash` varchar(255) NOT NULL,
+  `created_date` date DEFAULT (curdate()),
+  PRIMARY KEY (`user_id`),
+  UNIQUE KEY `username` (`username`)
+);
+
